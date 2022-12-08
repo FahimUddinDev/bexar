@@ -1,0 +1,26 @@
+.xpCounter {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(37, 45, 57);
+  padding: 5% 5% 2% 5%;
+  text-align: left;
+}
+
+.Count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countIcon {
+  padding: 20px 30px;
+  color: rgb(133, 195, 58);
+}
+.countInfo {
+  margin: auto;
+}
+.countInfo h4 {
+  font-weight: 700;
+}

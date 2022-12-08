@@ -1,0 +1,42 @@
+.destinationWrapper {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: rgb(245, 246, 250);
+  padding: 5%;
+  position: relative;
+}
+.destinationCard {
+  min-width: 310px;
+  width: 30%;
+  text-align: left;
+  margin: 20px;
+  color: rgb(129, 131, 133);
+  z-index: 2;
+}
+.destinationCard h4 {
+  font-weight: 800 !important;
+  color: rgb(23, 34, 49);
+}
+.DCSL {
+  color: rgb(148, 195, 58);
+}
+.D-BG1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.D-BG2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+@media screen and (max-width: 778px) {
+  .destinationCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+.commentWrapper {
+  width: 100%;
+  margin: 40px 0px;
+}
+.commentWrapper > h4 {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+  color: rgb(23, 34, 49);
+}
+.commentMakerWrapper {
+  width: 100%;
+}
+.mainComment {
+  width: 100%;
+  display: flex;
+  text-align: left;
+}
+.mainComment > img {
+  width: 80px;
+  height: fit-content;
+  margin-top: 10px;
+}
+.CommentInfo {
+  margin-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(229, 231, 233);
+}
+
+.CommentInfo > h6 {
+  font-weight: 700;
+  color: rgb(23, 34, 49);
+}
+
+.CommentInfo > p {
+  color: rgb(52, 58, 64);
+  margin-bottom: 20px;
+}
+.commentDate {
+  color: rgb(129, 131, 133) !important;
+  margin-bottom: 10px !important;
+}
+.replyButton {
+  color: rgb(52, 58, 64);
+  background: rgb(244, 244, 244);
+  padding: 10px 15px;
+  font-weight: 700 !important;
+}
+
+.commentReply {
+  display: flex;
+  text-align: left;
+  margin: 40px 90px;
+}
+.commentReply > img {
+  width: 80px;
+  height: fit-content;
+  margin-top: 10px;
+}

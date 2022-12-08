@@ -1,0 +1,57 @@
+.detailsCardWrapper {
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 40px rgb(235, 240, 240);
+  margin: 40px 0px;
+  padding: 5%;
+  gap: 30px;
+}
+.DCWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.PDCard {
+  min-width: 300px;
+  width: 45%;
+}
+.PDCard2 {
+  width: 100%;
+}
+.PDCard > p {
+  color: rgb(129, 131, 133);
+  text-align: justify;
+  margin: 10px 0px;
+}
+.PDCard2 > p {
+  color: rgb(129, 131, 133);
+  text-align: justify;
+  margin: 10px 0px;
+}
+.DCWrapper > img {
+  min-width: 300px;
+  width: 45%;
+  margin-top: 20px;
+}
+.CPWrapper {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.challengeBullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(133, 195, 57);
+  margin-right: 10px;
+}
+.CPWrapper > p {
+  color: rgb(129, 131, 133);
+}
+
+.PDCPointerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

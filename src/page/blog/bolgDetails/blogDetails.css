@@ -1,0 +1,57 @@
+.BDBody {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+}
+.blogDetails {
+  width: 70%;
+  margin: 10px 10%;
+}
+.BDImage {
+  width: 100%;
+  position: relative;
+}
+
+.BDImage > img {
+  width: 100%;
+}
+.BDInfo {
+  text-align: left;
+  width: 100%;
+}
+.BDHeading {
+  width: 100%;
+}
+.BDHeading > p {
+  margin: 20px 0px;
+}
+.BDHeading > h3 {
+  margin: 20px 0px;
+}
+.BDDescription {
+  width: 100%;
+  text-align: justify;
+  color: rgb(164, 166, 167);
+}
+
+.BDDescription > h6 {
+  margin-top: 20px;
+  color: rgb(23, 34, 49);
+  font-weight: 700;
+}
+.BDDescription > h6 > span {
+  color: rgb(164, 166, 167);
+}
+.BDDescription > h6 > span > a {
+  margin-left: 15px;
+  color: rgb(164, 166, 167);
+}
+.BDDescription > h6 > span > a :hover {
+  color: rgb(133, 195, 57);
+}
+@media screen and (max-width: 900px) {
+  .blogDetails {
+    width: 100%;
+    margin: 10px 5%;
+  }
+}

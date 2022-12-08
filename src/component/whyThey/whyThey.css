@@ -1,0 +1,185 @@
+.WhyTheyWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgb(245, 246, 250);
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  transition: 2s all ease;
+}
+
+@keyframes video {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.WhyTheyWrapper:hover .image {
+  animation: video 1s ease 0.5s 1 normal;
+}
+.videoIcon {
+  position: relative;
+}
+.video img {
+  width: 100%;
+  height: 100%;
+}
+.videoButton {
+  color: white;
+  height: 130px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(133, 195, 58);
+  position: absolute;
+  bottom: 200px;
+}
+.videoButton h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.videoButton h5 span {
+  margin-left: 20px;
+}
+.playButton {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.playButton div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+}
+.playButton div:hover {
+  transition: 0.5s;
+  animation: shadow 1s;
+}
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+.description {
+  margin-top: 10vh;
+  width: 30%;
+  text-align: left;
+  margin-left: 10%;
+}
+.description h5 {
+  color: rgb(129, 131, 133);
+  margin-bottom: 10px;
+}
+.description h4 {
+  color: rgb(23, 34, 49);
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.description p {
+  color: rgb(129, 131, 133) !important;
+  font-weight: 400 !important;
+  text-align: justify;
+}
+
+.point {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+.points {
+  padding-top: 20px;
+}
+.pointImg {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pointBg {
+  background-color: rgba(133, 195, 58, 0.3);
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.pointBorder {
+  border: 2px solid rgb(133, 195, 58);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: rgb(133, 195, 58);
+}
+
+.pointDescription {
+  width: 50%;
+  margin-left: 20px;
+}
+.pointDescription h6 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .description {
+    width: 80%;
+    padding: 10%;
+    margin: 0;
+  }
+  .image {
+    width: 100%;
+  }
+}
+
+.bullet {
+  gap: 5px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .videoButton {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    bottom: 50px;
+  }
+  .playButton {
+    height: 50px;
+    width: 50px;
+  }
+  .videoButton h5 {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,132 @@
+.service {
+  width: 100%;
+  background-color: rgb(245, 246, 250);
+  padding: 40px 10%;
+}
+.firstHeading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(129, 131, 133);
+  margin: 10px, 0px;
+}
+.secondHeading {
+  width: 100%;
+  text-align: left;
+  color: rgb(23, 34, 49);
+}
+.secondHeading h3 {
+  font-weight: 700;
+}
+
+.serviceCardsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+.serviceCardWrapper {
+  padding-top: 100%;
+  min-width: 200px;
+  width: 23%;
+  background: white;
+  padding: 6% 2%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 50px rgb(205, 206, 210);
+}
+.serviceCardWrapper:hover {
+  background: rgba(37, 45, 57, 1);
+}
+.serviceCardWrapper:hover .cardIcon,
+.serviceCardWrapper:hover .serviceCard p,
+.serviceCardWrapper:hover .MuiTypography-body1 {
+  color: white !important;
+}
+.serviceCard {
+  min-width: 200px;
+  max-width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.cardHeading {
+  color: rgb(23, 34, 49) !important;
+  font-weight: 800 !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.cardHeading2 {
+  color: rgb(129, 131, 133) !important;
+}
+
+.serviceCardImageWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 50%;
+}
+.serviceCardBackground {
+  width: 100%;
+  padding-top: 100%;
+  height: auto;
+  background: rgba(134, 195, 58, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceCardBordar {
+  width: 80%;
+  height: 80%;
+  border: 2px solid rgb(134, 195, 58);
+  border-radius: 50%;
+}
+.cardIcon {
+  color: rgb(134, 195, 58);
+  position: absolute;
+  top: 25%;
+  height: 50%;
+}
+.servicebtn {
+  display: none;
+  margin: auto;
+  border: none;
+  text-decoration: none;
+  font-size: 1em;
+}
+@media screen and (max-width: 1309px) {
+  .topBtnService {
+    display: none;
+  }
+  .servicebtn {
+    display: flex;
+    width: 160px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .service {
+    padding: 40px 5%;
+  }
+}
+@media screen and (max-width: 755px) {
+  .serviceCardWrapper {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .serviceCardWrapper {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .serviceCardWrapper {
+    max-width: 400px;
+  }
+}

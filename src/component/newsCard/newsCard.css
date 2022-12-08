@@ -1,0 +1,89 @@
+.newsWrapper {
+  width: 100%;
+  text-align: left;
+  padding: 40px 20px;
+  background: rgb(245, 246, 250);
+}
+.newsFirstHeading {
+  color: rgb(129, 131, 133);
+  font-weight: 600 !important;
+  margin: 15px 0px !important;
+  letter-spacing: 2px !important;
+}
+.newsCardWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.NewsCard {
+  background: white;
+  min-width: 200px;
+  max-width: 30%;
+}
+.newsCardInfo {
+  padding: 5%;
+}
+.newsCardImage {
+  -webkit-clip-path: circle(157% at 50% -100%);
+  clip-path: circle(157% at 50% -100%);
+  overflow: hidden;
+  position: relative;
+}
+.newsCardHeadline {
+  display: flex;
+  gap: 20px;
+}
+.newsCardHeadlineBorder {
+  width: 8px;
+  height: 90px;
+  background: rgb(134, 195, 58);
+  border-radius: 10px;
+}
+.newsCardImage img {
+  width: 100%;
+}
+.newsButton {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border: none;
+  color: white;
+  background: rgb(134, 195, 58);
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.NewsCard {
+  min-width: 250px;
+  width: 30%;
+  margin-top: 20px;
+}
+.newsCardHeadlineBorder {
+  background: rgb(134, 195, 58);
+}
+
+.newsCardBody {
+  width: 100%;
+  color: rgb(129, 131, 133);
+  margin-top: 10px;
+}
+.newsCardFooter {
+  margin-top: 30px;
+}
+.newsCardButton2 {
+  color: rgb(29, 31, 33);
+  cursor: pointer;
+  font-weight: 700 !important;
+}
+.newsCardButton2 span {
+  margin-left: 10px;
+}
+.newsCardButton2:hover {
+  color: rgb(134, 195, 58);
+}
+.newsCardButton2:hover .buttonArrow {
+  font-style: italic;
+  transition: 0.1s;
+  transform: scaleX(1.8);
+}

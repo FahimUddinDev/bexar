@@ -1,0 +1,86 @@
+.PDWrapper {
+  width: 100%;
+}
+.PDBodyWrapper {
+  width: 90%;
+  margin: 50px 5%;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.PDInfoWrapper {
+  width: 65%;
+  color: rgb(37, 45, 57);
+}
+
+.PDInfoWrapper > h3 {
+  font-weight: 700;
+}
+
+.PDInfoWrapper > p {
+  color: rgb(129, 131, 133);
+  text-align: justify;
+}
+.PDCustomerWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(37, 45, 57);
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.PDCustomer {
+  width: 40%;
+  margin: 20px 0px;
+}
+.PDCustomer > h6 {
+  font-weight: 700;
+}
+.PDImage {
+  width: 100%;
+  margin: 20px 0px;
+}
+.PDMainCardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.PDContactWrapper {
+  width: 30%;
+}
+
+@media screen and (max-width: 900px) {
+  .PDBodyWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .PDContactWrapper {
+    width: 80%;
+  }
+  .PDInfoWrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .PDContactWrapper {
+    width: 90%;
+  }
+  .PDInfoWrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .PDContactWrapper {
+    width: 100%;
+  }
+  .PDInfoWrapper {
+    width: 100%;
+  }
+}

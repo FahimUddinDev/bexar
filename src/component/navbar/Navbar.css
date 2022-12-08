@@ -1,0 +1,171 @@
+.font {
+  font-size: 20px;
+}
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.navBrand {
+  margin: 0px 5%;
+}
+.bars {
+  display: none;
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+.bars:hover {
+  color: rgba(133, 195, 57, 1);
+}
+
+.navList {
+  display: flex;
+  width: 70%;
+  margin-right: 5%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navList ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4%;
+  font-weight: 700;
+}
+.navList ul li {
+  position: relative;
+}
+.navsubMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  z-index: 3;
+  background: white;
+  width: 200px;
+  padding: 20px;
+  left: -10px;
+  box-shadow: 0px 5px 5px rgb(100, 100, 100);
+}
+
+.navList ul li:hover .navsubMenu {
+  display: flex;
+}
+
+.navSearch {
+  width: 100px;
+}
+
+.navInput {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBars {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.searchInput {
+  margin-left: 10px;
+  width: 100%;
+  height: 70%;
+  border: none;
+  font-size: 20px;
+}
+.searchInput:focus {
+  outline: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navList {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .navList ul {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 9%;
+  }
+  .bars {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+  .navsubMenu {
+    position: static;
+    padding-top: 10px;
+    gap: 5px;
+    box-shadow: none;
+  }
+  .deActiveMenu {
+    display: none;
+  }
+}
+
+.active {
+  display: flex !important;
+}
+.deActive {
+  display: none;
+}
+
+.navLink {
+  color: rgb(23, 34, 49);
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.navActive {
+  color: rgb(134, 195, 58);
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(23, 34, 49);
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.navActive {
+  color: rgb(134, 195, 58);
+  font-size: 1.4em;
+}
+.navsubLink {
+  margin: 0px 0px 0px 10px;
+  font-size: 1em;
+}
+.navsubActive {
+  color: rgb(134, 195, 58);
+}
+
+.navBLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.navBActive {
+  color: rgb(250, 250, 250);
+  font-size: 1.4em;
+}

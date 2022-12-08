@@ -1,0 +1,185 @@
+.CBSidebarWrapper {
+  max-width: 500px;
+  min-width: 200px;
+  position: relative;
+  background: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: 1s;
+  z-index: 2;
+}
+/* Search Style */
+.CBSSearchWrapper {
+  background: white;
+  width: 90%;
+  color: rgb(23, 34, 49);
+  margin: 5%;
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  text-align: left;
+  padding: 5%;
+}
+.searchName {
+  font-weight: 600 !important;
+}
+.CBSSearch {
+  font-size: 20px;
+  margin: 20px 0px;
+  color: rgb(129, 131, 133);
+  border-bottom: 1px solid rgb(229, 231, 233);
+}
+
+.CBSSearch > input {
+  padding: 10px 0px;
+  font-size: 20px;
+  border: none;
+  width: 90%;
+}
+.CBSSearch > input:focus {
+  outline: none;
+}
+.CBSSearch:focus-within {
+  border-bottom: 1px solid rgb(134, 195, 58);
+}
+
+/* Article Link  */
+.CBSLatestWrapper {
+  background: white;
+  width: 90%;
+  color: rgb(23, 34, 49);
+  margin: 5%;
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  text-align: left;
+  padding: 5%;
+}
+
+.CBSLatestWrapper > h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.articleHeading {
+  display: flex;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.articleHeading > img {
+  width: 20%;
+  min-width: 50px;
+  height: fit-content;
+
+  margin-bottom: 20px;
+}
+.AHcontent {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.AHTitle {
+  color: rgb(23, 34, 49);
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+/* Category style  */
+.CBSCategoryWrapper {
+  background: white;
+  width: 90%;
+  color: rgb(23, 34, 49);
+  margin: 5%;
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  text-align: left;
+  padding: 5%;
+}
+.CBSCategoryWrapper > h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ACWrapper {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.ACWrapper > input {
+  -webkit-appearance: none !important;
+  border: 2px solid rgb(134, 195, 58);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 1s;
+}
+.ACWrapper > input:checked {
+  background: rgb(134, 195, 58);
+}
+
+/* Tag style  */
+
+.CBSTagWrapper {
+  background: white;
+  width: 90%;
+  color: rgb(23, 34, 49);
+  margin: 5%;
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  text-align: left;
+  padding: 5%;
+}
+
+.CBSTagWrapper > h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ATagWrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.ATag {
+  color: rgb(129, 131, 133);
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.CBSSwitch {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(210, 210, 210);
+  background: white;
+  color: rgb(129, 131, 133);
+  position: absolute;
+  z-index: 10;
+}
+
+@media screen and (max-width: 900px) {
+  .CBSidebarWrapper {
+    position: absolute;
+    right: -500px;
+  }
+  .CBSSwitch {
+    display: flex !important;
+    left: -50px;
+  }
+}
+
+.switchActive {
+  left: 0;
+  position: static;
+}
+.sidebarActive {
+  display: block;
+  right: 0% !important;
+}

@@ -1,0 +1,118 @@
+.caseStudyMainDiv {
+  width: 100%;
+  position: relative;
+}
+.caseModal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: rgba(52, 58, 64, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modalImage {
+  width: 100%;
+}
+.modalImage > img {
+  max-width: 100%;
+}
+
+.caseModal > button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: rgb(52, 58, 64);
+  border: none;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.caseStudyWrapper {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.caseMenuWrapper {
+  width: 100%;
+}
+
+.caseMenuBtn {
+  font-size: 1rem;
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: rgb(52, 58, 64);
+  margin: 20px 5px;
+  cursor: pointer;
+}
+
+.btnActive {
+  color: rgb(134, 195, 58);
+  font-weight: 600;
+}
+
+.caseCardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.caseCard {
+  width: 30%;
+  min-width: 250px;
+  transition: 1s;
+}
+.CCImageWrapper {
+  width: 100%;
+  position: relative;
+}
+.CCImageWrapper > img {
+  width: 100%;
+}
+.CCOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(134, 195, 58, 0.8);
+  top: 0;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.CCImageWrapper:hover .CCOverlay {
+  display: flex;
+}
+
+.CCNameWrapper {
+  width: 100%;
+  text-align: left;
+  color: rgb(131, 211, 33);
+  font-weight: 600;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.CSNBody {
+  font-weight: 600;
+  color: rgb(131, 211, 33);
+}
+.CSNHeading {
+  color: rgb(52, 58, 64);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 720px) {
+  .caseMenuBtn {
+    font-size: 0.9rem;
+  }
+}

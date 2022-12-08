@@ -1,0 +1,72 @@
+.aboutUsWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.aboutUsWrapper * {
+  margin: 5% 2%;
+}
+.aboutImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40%;
+  transition: 2s all ease;
+}
+
+@keyframes image {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.aboutUsWrapper:hover .aboutImage {
+  animation: image 1s ease 0.5s 1 normal;
+}
+.aboutImage img {
+  width: 90%;
+}
+.AUsCFirstImage {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.aboutUsDescription {
+  width: 38%;
+  text-align: left;
+  padding: 5%;
+}
+.aboutUsDescription h5 {
+  color: rgb(129, 131, 133);
+}
+.aboutUsDescription h4 {
+  color: rgb(23, 34, 49);
+  font-weight: 700;
+  padding: 10px 0;
+}
+.aboutUsDescription h6 {
+  color: rgb(129, 131, 133);
+}
+.aboutUsDescription button {
+  margin-top: 20px;
+}
+.bullet {
+  margin: 0;
+}
+.moreAbsBtn {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutUsDescription {
+    width: 90%;
+  }
+  .aboutImage {
+    width: 70%;
+  }
+}

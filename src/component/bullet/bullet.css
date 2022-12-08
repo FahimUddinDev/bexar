@@ -1,0 +1,7 @@
+.bullet {
+  display: flex;
+  gap: 3px;
+}
+.bullet * {
+  border-radius: 5px;
+}

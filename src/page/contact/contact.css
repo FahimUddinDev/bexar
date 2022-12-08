@@ -1,0 +1,58 @@
+.contactCardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.contactCard {
+  width: 30%;
+  min-width: 300px;
+  box-shadow: 0px 0px 20px rgb(210, 210, 230);
+  padding: 5%;
+  margin: 20px;
+}
+
+.contactCard > h3 {
+  color: rgb(134, 195, 58);
+}
+.contactCard > h5 {
+  color: rgb(23, 34, 49);
+}
+.contactCard > p {
+  color: rgb(129, 131, 133);
+}
+.ContactLocationWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.location {
+  margin-top: 100px;
+  width: 45%;
+  height: 80vh;
+  overflow: hidden !important;
+}
+
+.CFWrapper {
+  width: 45%;
+}
+@media screen and (max-width: 1240px) {
+  .contactCard {
+    width: 40%;
+  }
+  .location {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .CFWrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contactCard {
+    width: 80%;
+  }
+}

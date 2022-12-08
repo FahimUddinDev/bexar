@@ -1,0 +1,125 @@
+.pricingTable {
+  font-family: "Barlow Condensed";
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+.pSwitch {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  background: rgb(134, 195, 58);
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+}
+.pSwitchDiv {
+  width: 100%;
+  height: 100%;
+}
+.switchCircle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 1s;
+  z-index: 5;
+}
+.priceHeading {
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(23, 34, 49);
+}
+.PriceHeading1 {
+  font-weight: 700 !important;
+  color: rgb(132, 134, 135);
+  padding: 20px;
+}
+.PriceHeading2 {
+  font-weight: 700 !important;
+  padding-bottom: 20px;
+}
+.pSwitchWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.priceCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.priceCard {
+  width: 25%;
+  min-width: 250px;
+  border-right: 2px solid rgb(232, 234, 235);
+  border-left: 2px solid rgb(232, 234, 235);
+  padding: 2%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0px;
+}
+.pCardButton {
+  background: white;
+  color: rgb(23, 34, 49);
+  font-weight: 900 !important;
+  font-size: 1.2rem !important;
+  border: 1px solid rgb(232, 234, 235);
+  width: 170px;
+}
+
+.cc1,
+.cc2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(244, 245, 246, 0.1);
+  border-radius: 50%;
+}
+
+.cc1 {
+  top: -200px;
+  left: -300px;
+}
+.cc2 {
+  bottom: -250px;
+  right: -390px;
+}
+
+.priceCardCenter {
+  background: rgb(134, 195, 58);
+  color: white !important;
+}
+
+.priceBottom {
+  color: rgb(132, 134, 135);
+  font-size: 1.2rem;
+}
+
+.priceCardCenter .priceBottom {
+  color: white;
+}
+
+@media screen and (max-width: 870px) {
+  .priceCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .priceCard {
+    width: 70%;
+  }
+}

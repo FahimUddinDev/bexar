@@ -1,0 +1,90 @@
+.ourServiceWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.ourServiceBG1 {
+  width: 100%;
+  height: 383px;
+  background: rgb(36, 44, 58);
+  position: absolute;
+  z-index: -1;
+}
+.ourServiceBG2 {
+  width: 100%;
+  height: 100%;
+  background: rgb(245, 246, 250);
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+}
+
+.ourService {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.ourService > h6 {
+  color: rgb(129, 131, 133);
+  font-weight: 700;
+  padding: 20px;
+}
+.ourService h3 {
+  font-weight: 700;
+  padding: 0px 0px 40px 0px;
+}
+.ourServiceCardWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ourServiceCard {
+  text-align: left;
+  min-width: 250px;
+  max-width: 30%;
+  box-shadow: 0px 0px 5px rgb(129, 131, 133);
+  position: relative;
+  background: white;
+  margin-bottom: 30px;
+}
+
+.ourServiceCard img {
+  width: 100%;
+}
+.ourServiceCardSymbol {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  color: white;
+  background: rgb(134, 195, 58);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourServiceCardInfo {
+  margin: 15px;
+}
+
+.ourServiceCardInfo > h6 {
+  color: rgb(36, 44, 58);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ourServiceCardInfo p {
+  color: rgb(129, 131, 133);
+  margin-bottom: 20px;
+}
+
+.ourServiceCardInfo .newsCardButton2 {
+  font-weight: 800 !important;
+}

@@ -1,0 +1,18 @@
+.blogSidebarBodyWrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.blogSidebarCardWrapper {
+  margin-top: 10px;
+  width: 90%;
+}
+.CBlogSidebarMain {
+}
+@media screen and (max-width: 900px) {
+  .blogSidebarCardWrapper {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

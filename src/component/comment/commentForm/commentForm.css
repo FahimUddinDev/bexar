@@ -1,0 +1,46 @@
+.commentFormWrapper {
+  width: 100%;
+  text-align: left;
+}
+.commentFormWrapper > h3 {
+  font-weight: 700;
+  color: rgb(23, 34, 49);
+}
+.commentForm {
+  width: 100%;
+}
+.commentForm > form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.commentName,
+.commentEmail,
+.commentMessage {
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 0px 20px rgb(210, 210, 230);
+  padding: 15px;
+  margin: 20px 20px 20px 0px;
+}
+.commentName:focus,
+.commentEmail:focus,
+.commentMessage:focus {
+  outline: none;
+}
+.commentName,
+.commentEmail {
+  width: 45%;
+  min-width: 200px;
+}
+.commentMessage {
+  width: 100%;
+  height: 150px;
+}
+.commentButton {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  margin: 40px 0px;
+}
